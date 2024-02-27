@@ -28,5 +28,16 @@ Tags são rótulos ou etiquetas que podem ser associados a test cases, keywords 
 São usadas para categorizar e organizar seus testes. Elas ajudam na filtragem e execução seletiva 
 de testes com base em categorias específicas.
 
-O atributo documentation é usado para fornecer documentação ou descrição legível por humanos para test cases, keywords ou suítes de testes.
-A documentação é uma forma de descrever o propósito ou a funcionalidade de um teste ou de uma keyword, tornando mais fácil para os membros da equipe entenderem o que está sendo testado ou realizado.
+O atributo documentation é usado para fornecer documentação ou descrição legível por humanos para 
+test cases, keywords ou suítes de testes.
+A documentação é uma forma de descrever o propósito ou a funcionalidade de um teste ou de uma keyword, 
+tornando mais fácil para os membros da equipe entenderem o que está sendo testado ou realizado.
+
+
+*** Setup e Teardown ***
+
+A seção Setup é usada para definir ações que devem ser realizadas antes da execução de cada test case ou 
+suíte de testes.
+
+A seção Teardown é usada para definir ações que devem ser realizadas após a execução de cada test case ou 
+suíte de testes.
