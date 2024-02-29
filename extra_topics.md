@@ -51,3 +51,27 @@ Exemplo: "Entrando na função X", "Saindo do loop Y."
 Relatórios:
 Os relatórios fornecem uma visão consolidada dos resultados dos testes, mostrando quais casos de teste 
 passaram, falharam ou foram ignorados. Os relatórios podem ser gerados em vários formatos, como HTML, XML ou TXT.
+
+
+*** Comandos para executar testes via linha de comando ***
+
+-d -> Diretório destino ond eserá salvo o resultado dos testes. EX:
+robot -d ./results .\src\first_test.robot
+
+-L -> Nível de Log (Info, Debug ou trace). EX:
+robot -d ./results -L info .\src\first_test.robot
+
+-i -> Executa teste segundo tag (regression, performance, smoke). EX:
+robot -d ./results -L regression .\src\first_test.robot
+
+-t -> Executa um teste específico da suíte de teste. EX:
+robot -d ./results -t 'Teste 1' .\src\first_test.robot
+
+-N -> Nome no título do arquivo de log. EX:
+robot -N 'Teste 1' -d ./results .\src\first_test.robot
+
+-v -> Atribui valor a variáveis. Ex:
+robot -d ./results -v X:1 -v Y:3 .\src\first_test.robot
+
+-l -> Nome para o arquivo de log. EX:
+robot -d ./results -l 'Arquivo de log' .\src\first_test.robot
