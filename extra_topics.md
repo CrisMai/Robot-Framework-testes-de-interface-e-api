@@ -75,3 +75,50 @@ robot -d ./results -v X:1 -v Y:3 .\src\first_test.robot
 
 -l -> Nome para o arquivo de log. EX:
 robot -d ./results -l 'Arquivo de log' .\src\first_test.robot
+
+
+*** Biblioteca Builtin ***
+
+A biblioteca BuiltIn é uma biblioteca padrão incorporada no Robot Framework e fornece um conjunto essencial 
+de palavras-chave e funcionalidades que podem ser utilizadas em todos os casos de teste.
+Aqui estão algumas funcionalidades principais da biblioteca BuiltIn:
+
+1. Controle de Fluxo:
+Run Keyword If: Executa uma palavra-chave se uma condição for verdadeira.
+Run Keyword Unless: Executa uma palavra-chave a menos que uma condição seja verdadeira.
+Run Keywords: Executa várias palavras-chave em sequência, independentemente do resultado de cada uma.
+
+2. Variáveis e Atribuições:
+Set Variable: Atribui um valor a uma variável.
+${Variable}= Evaluate: Avalia uma expressão em Python e atribui o resultado a uma variável.
+
+3. Asserções e Verificações:
+Should Be Equal: Verifica se dois valores são iguais.
+Should Not Be Equal: Verifica se dois valores não são iguais.
+Should Be True/False: Verifica se uma condição é verdadeira ou falsa.
+
+4. Log e Mensagens:
+Log: Gera uma mensagem de log.
+Log Many: Gera várias mensagens de log.
+Comment: Adiciona um comentário que não é exibido no log.
+
+5. Manipulação de Listas e Dicionários:
+Create List: Cria uma nova lista.
+Create Dictionary: Cria um novo dicionário.
+Append To List: Adiciona um item a uma lista.
+
+6. Operações de String:
+Should Start With: Verifica se uma string começa com um valor especificado.
+Should End With: Verifica se uma string termina com um valor especificado.
+Should Contain: Verifica se uma string contém um valor especificado.
+
+7. Temporizadores:
+Sleep: Pausa a execução por um determinado número de segundos.
+
+8. Manipulação de Arquivos e Diretórios:
+File Should Exist: Verifica se um arquivo existe.
+Directory Should Exist: Verifica se um diretório existe.
+Remove File: Remove um arquivo.
+
+9. Execução Dinâmica de Palavras-Chave:
+Run Keyword: Executa uma palavra-chave dinamicamente.
