@@ -122,3 +122,51 @@ Remove File: Remove um arquivo.
 
 9. Execução Dinâmica de Palavras-Chave:
 Run Keyword: Executa uma palavra-chave dinamicamente.
+
+
+*** Declaração de Variável com Robot ***
+
+No Robot Framework, a declaração de variáveis pode ser feita usando a palavra-chave Set Variable ou simplesmente 
+atribuindo um valor a uma variável. Abaixo estão algumas maneiras de declarar variáveis:
+
+Usando Set Variable:
+
+*** Variables ***
+${nome_da_variavel}    Valor da Variável
+${outra_variavel}      Outro Valor
+
+*** Test Cases ***
+Exemplo de Uso de Variáveis
+    Set Variable    ${idade}    25
+    Log    A idade é: ${idade}
+    Set Variable    ${pi}    3.14
+    Log    O valor de pi é: ${pi}
+
+Atribuindo Diretamente:
+
+*** Test Cases ***
+Exemplo de Atribuição Direta
+    ${nome} =    Valor do Nome
+    ${idade} =    30
+    ${pi} =    3.14
+    Log    O nome é: ${nome}
+    Log    A idade é: ${idade}
+    Log    O valor de pi é: ${pi}
+
+Atribuição durante a Execução:
+Você também pode atribuir valores durante a execução usando a palavra-chave Set Variable:
+
+*** Test Cases ***
+Atribuição Durante a Execução
+    ${valor} =    Set Variable    Valor Dinâmico
+    Log    O valor atribuído é: ${valor}
+
+
+Atribuição Condicional:
+Você pode usar a palavra-chave Set Variable If para atribuir um valor a uma variável com base em uma condição:
+
+*** Test Cases ***
+Atribuição Condicional
+    ${condicao} =    Set Variable If    ${variavel} == "valor_esperado"    Verdadeiro    Falso
+    Log    O resultado da condição é: ${condicao}
+
