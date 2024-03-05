@@ -170,3 +170,15 @@ Atribuição Condicional
     ${condicao} =    Set Variable If    ${variavel} == "valor_esperado"    Verdadeiro    Falso
     Log    O resultado da condição é: ${condicao}
 
+
+*** Formas de declaração de variáveis ***
+
+- Local -> Variáveis locais são declaradas dentro de uma keyword ou em um contexto local específico.
+Elas são acessíveis apenas dentro da keyword ou contexto em que são declaradas.
+
+- Teste -> Variáveis de teste são definidas no nível do caso de teste usando a seção *** Variables ***.
+Elas são acessíveis em todo o caso de teste.
+
+- Global -> Declarada globalmente para ser usada em qualquer teste. São definidas no nível de suite 
+usando a seção *** Variables *** da suite.
+Elas são acessíveis em todos os casos de teste dentro da mesma suite.
