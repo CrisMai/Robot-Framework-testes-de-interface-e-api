@@ -182,3 +182,19 @@ Elas são acessíveis em todo o caso de teste.
 - Global -> Declarada globalmente para ser usada em qualquer teste. São definidas no nível de suite 
 usando a seção *** Variables *** da suite.
 Elas são acessíveis em todos os casos de teste dentro da mesma suite.
+
+
+*** Utilizando keywords SHOULD ***
+
+Should:
+
+A palavra-chave Should é usada para afirmar que uma condição específica é verdadeira.
+Ela é frequentemente utilizada para verificar se algo ocorreu conforme o esperado durante a execução de um teste.
+
+Utilização:
+${resultado}=    Execute Keyword And Return Status    Minha Palavra-Chave
+Should Be True    ${resultado}    Mensagem de Falha Opcional
+
+Contexto de Uso:
+Verificar se uma condição é verdadeira durante a execução de um teste.
+Usada com palavras-chave que retornam um status booleano.
