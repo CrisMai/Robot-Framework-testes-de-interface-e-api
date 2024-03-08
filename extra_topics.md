@@ -198,3 +198,4 @@ Should Be True    ${resultado}    Mensagem de Falha Opcional
 Contexto de Uso:
 Verificar se uma condição é verdadeira durante a execução de um teste.
 Usada com palavras-chave que retornam um status booleano.
+
