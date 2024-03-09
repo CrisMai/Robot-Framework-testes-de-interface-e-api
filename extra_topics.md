@@ -199,3 +199,17 @@ Contexto de Uso:
 Verificar se uma condição é verdadeira durante a execução de um teste.
 Usada com palavras-chave que retornam um status booleano.
 
+
+*** Utilizando Keywords IF-ELSE ***
+
+O bloco If-Else é usado para controlar o fluxo do programa com base em condições. 
+Se uma condição for verdadeira, o bloco If é executado; caso contrário, o bloco Else (opcional) é executado.
+
+Utilização:
+${condicao}=    Evaluate    2 + 2 == 4
+Run Keyword If    ${condicao}    Minha Palavra-Chave
+...    ELSE    Outra Palavra-Chave
+
+Contexto de Uso:
+Execução condicional de palavras-chave com base em uma condição.
+Controlar o fluxo do programa.
