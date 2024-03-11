@@ -213,3 +213,18 @@ Run Keyword If    ${condicao}    Minha Palavra-Chave
 Contexto de Uso:
 Execução condicional de palavras-chave com base em uma condição.
 Controlar o fluxo do programa.
+
+
+*** Utlizando keywords FOR ***
+
+A palavra-chave For é usada para realizar iterações sobre elementos, como uma lista ou um range de valores. 
+Ela permite a execução repetitiva de blocos de código para cada elemento na iteração.
+
+Utilização:
+@{lista}=    Create List    Item1    Item2    Item3
+:FOR    ${item}    IN    @{lista}
+\    Log    Item: ${item}
+
+Contexto de Uso:
+Iterar sobre elementos em uma lista ou range.
+Realizar operações repetitivas.
