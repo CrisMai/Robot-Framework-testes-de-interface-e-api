@@ -228,3 +228,21 @@ Utilização:
 Contexto de Uso:
 Iterar sobre elementos em uma lista ou range.
 Realizar operações repetitivas.
+
+
+*** Variáveis ***
+
+Variáveis são utilizadas para armazenar e manipular dados durante a execução de testes ou automação. 
+Elas são componentes fundamentais para parametrizar casos de teste, armazenar valores temporários, 
+reutilizar dados e tornar os scripts mais flexíveis e dinâmicos.
+Algumas características-chave das variáveis no Robot Framework:
+
+Atribuição Dinâmica: As variáveis podem ser criadas dinamicamente durante a execução do script, 
+e seus valores podem ser atribuídos e modificados conforme necessário.
+
+Escopo Global por Padrão: As variáveis são globais por padrão, o que significa que podem ser acessadas em qualquer lugar do teste. 
+
+Utilização em Expressões: Variáveis podem ser usadas em expressões matemáticas, strings e em muitos outros contextos.
+
+Parametrização: Variáveis são frequentemente usadas para parametrizar testes, permitindo que você execute o mesmo caso de teste 
+com diferentes conjuntos de dados.
