@@ -124,6 +124,24 @@ Remove File: Remove um arquivo.
 Run Keyword: Executa uma palavra-chave dinamicamente.
 
 
+*** Variáveis ***
+
+Variáveis são utilizadas para armazenar e manipular dados durante a execução de testes ou automação. 
+Elas são componentes fundamentais para parametrizar casos de teste, armazenar valores temporários, 
+reutilizar dados e tornar os scripts mais flexíveis e dinâmicos.
+Algumas características-chave das variáveis no Robot Framework:
+
+Atribuição Dinâmica: As variáveis podem ser criadas dinamicamente durante a execução do script, 
+e seus valores podem ser atribuídos e modificados conforme necessário.
+
+Escopo Global por Padrão: As variáveis são globais por padrão, o que significa que podem ser acessadas em qualquer lugar do teste. 
+
+Utilização em Expressões: Variáveis podem ser usadas em expressões matemáticas, strings e em muitos outros contextos.
+
+Parametrização: Variáveis são frequentemente usadas para parametrizar testes, permitindo que você execute o mesmo caso de teste 
+com diferentes conjuntos de dados.
+
+
 *** Declaração de Variável com Robot ***
 
 No Robot Framework, a declaração de variáveis pode ser feita usando a palavra-chave Set Variable ou simplesmente 
@@ -230,19 +248,34 @@ Iterar sobre elementos em uma lista ou range.
 Realizar operações repetitivas.
 
 
-*** Variáveis ***
+*** Listas e Dicionários ***
 
-Variáveis são utilizadas para armazenar e manipular dados durante a execução de testes ou automação. 
-Elas são componentes fundamentais para parametrizar casos de teste, armazenar valores temporários, 
-reutilizar dados e tornar os scripts mais flexíveis e dinâmicos.
-Algumas características-chave das variáveis no Robot Framework:
+Listas:
+Descrição: Uma lista é uma coleção ordenada de itens, onde cada item pode ser de qualquer tipo de dado. Os itens em uma lista são acessados por meio de índices numéricos, e a ordem dos itens é mantida.
 
-Atribuição Dinâmica: As variáveis podem ser criadas dinamicamente durante a execução do script, 
-e seus valores podem ser atribuídos e modificados conforme necessário.
+Declaração: No Robot Framework, uma lista pode ser declarada utilizando a palavra-chave Create List ou utilizando a sintaxe @{} para inicializar uma lista vazia.
 
-Escopo Global por Padrão: As variáveis são globais por padrão, o que significa que podem ser acessadas em qualquer lugar do teste. 
+Exemplo:
+*** Variables ***
+@{lista_numeros}    1    2    3    4    5
 
-Utilização em Expressões: Variáveis podem ser usadas em expressões matemáticas, strings e em muitos outros contextos.
+*** Test Cases ***
+Exemplo de Lista
+    ${lista_cores}=    Create List    Vermelho    Verde    Azul
+    Log    ${lista_cores}[1]  # Acessa o segundo elemento da lista
 
-Parametrização: Variáveis são frequentemente usadas para parametrizar testes, permitindo que você execute o mesmo caso de teste 
-com diferentes conjuntos de dados.
+
+Dicionário:
+Descrição: Um dicionário é uma coleção não ordenada de pares chave-valor, onde cada valor é associado a uma chave única. Os itens em um dicionário são acessados por meio das chaves, e não pela posição.
+
+Declaração: No Robot Framework, um dicionário pode ser declarado utilizando a palavra-chave Create Dictionary ou utilizando a sintaxe &{} para inicializar um dicionário vazio.
+
+Exemplo:
+*** Variables ***
+&{dicionario_pessoa}    Nome=João    Idade=30    Cidade=São Paulo
+
+*** Test Cases ***
+Exemplo de Dicionário
+    ${dicionario_carro}=    Create Dictionary    Marca=Toyota    Modelo=Corolla    Ano=2022
+    Log    ${dicionario_carro}[Marca]  # Acessa o valor associado à chave "Marca"
+
