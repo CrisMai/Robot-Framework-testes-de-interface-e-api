@@ -279,3 +279,52 @@ Exemplo de Dicionário
     ${dicionario_carro}=    Create Dictionary    Marca=Toyota    Modelo=Corolla    Ano=2022
     Log    ${dicionario_carro}[Marca]  # Acessa o valor associado à chave "Marca"
 
+
+
+*** Logs ***
+
+Log to Console:
+Registra uma mensagem no console de saída do Robot Framework.
+
+Características:
+Útil para exibir mensagens durante a execução do teste.
+A mensagem é exibida imediatamente no console de saída.
+Pode ser usada para depuração e monitoramento em tempo real.
+
+Exemplo:
+Log To Console    Esta é uma mensagem de exemplo para o console
+
+
+Log:
+Registra uma mensagem no log de execução do Robot Framework.
+
+Características:
+Registra uma única mensagem no log de execução.
+Útil para fornecer informações sobre o progresso do teste.
+
+Exemplo:
+Log    Esta é uma mensagem de exemplo no log
+
+
+Log Many:
+Registra várias mensagens de uma vez no log de execução.
+
+Características:
+Permite registrar várias mensagens em uma única chamada de palavra-chave.
+Cada mensagem é registrada em uma nova linha no log.
+
+Exemplo:
+Log Many    Mensagem 1    Mensagem 2    Mensagem 3
+
+
+Log Variables:
+Registra as variáveis e seus valores no log de execução.
+
+Características:
+Útil para depuração e monitoramento de variáveis durante a execução do teste.
+Registra todas as variáveis e seus valores no momento da chamada.
+
+Exemplo:
+${variavel1}=    Set Variable    Valor1
+${variavel2}=    Set Variable    Valor2
+Log Variables    # Registra os valores das variáveis no log
