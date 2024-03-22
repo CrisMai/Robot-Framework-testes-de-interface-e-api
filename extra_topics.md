@@ -328,3 +328,34 @@ Exemplo:
 ${variavel1}=    Set Variable    Valor1
 ${variavel2}=    Set Variable    Valor2
 Log Variables    # Registra os valores das variáveis no log
+
+
+*** Run Keyword ***
+
+A palavra-chave Run Keyword no Robot Framework permite executar outra palavra-chave 
+dentro do mesmo caso de teste ou keyword. Isso é útil quando você precisa chamar uma 
+palavra-chave de forma dinâmica, ou quando precisa lidar com condições específicas.
+
+Aqui está um exemplo simples de como você pode usar Run Keyword:
+
+Suponha que você tenha duas palavras-chave definidas, uma chamada Keyword1 e outra chamada Keyword2. 
+Você deseja executar uma dessas palavras-chave com base em alguma condição.
+
+*** Keywords ***
+Keyword1
+    Log    Executando Keyword1
+
+Keyword2
+    Log    Executando Keyword2
+
+Minha Keyword Dinâmica
+    ${condicao}=    Set Variable    ${True}   # Suponha que a condição seja verdadeira
+    Run Keyword If    ${condicao}    Keyword1    ELSE    Keyword2
+
+Neste exemplo:
+
+Keyword1 e Keyword2 são duas palavras-chave definidas.
+Minha Keyword Dinâmica é uma palavra-chave que define a lógica para decidir qual palavra-chave 
+executar com base em uma condição.
+Run Keyword If é usado para executar Keyword1 se a condição for verdadeira e Keyword2 se a condição 
+for falsa.
