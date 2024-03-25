@@ -359,3 +359,21 @@ Minha Keyword Dinâmica é uma palavra-chave que define a lógica para decidir q
 executar com base em uma condição.
 Run Keyword If é usado para executar Keyword1 se a condição for verdadeira e Keyword2 se a condição 
 for falsa.
+
+
+*** Bibliotecas ***
+
+- Biblioteca Operation System:
+
+É uma biblioteca embutida que fornece palavras-chave para executar comandos do sistema operacional, 
+interagir com o sistema de arquivos e realizar várias operações relacionadas ao sistema.
+
+Características e funcionalidades:
+-Execução de Comandos do Sistema Operacional
+-Manipulação de Arquivos e Diretórios
+-Obtenção de Informações do Sistema
+-Execução de Programas e Scripts
+-Manipulação de Variáveis de Ambiente
+
+Formas de Uso:
+Para utilizar a biblioteca OperatingSystem é preciso importá-la no seu arquivo de recursos ou no seu arquivo de teste. 
