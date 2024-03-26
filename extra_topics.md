@@ -377,3 +377,18 @@ Características e funcionalidades:
 
 Formas de Uso:
 Para utilizar a biblioteca OperatingSystem é preciso importá-la no seu arquivo de recursos ou no seu arquivo de teste. 
+
+
+- Biblioteca String
+
+É uma biblioteca embutida que fornece palavras-chave para manipular strings de texto. 
+Com esta biblioteca, é possível realizar diversas operações com strings, como formatação, concatenação, busca, substituição e verificação.
+
+Características e funcionalidades:
+-Manipulação de Strings
+-Formatação de Strings
+-Busca e Substituição
+-Verificação de Strings
+
+Formas de Uso:
+Para utilizar a biblioteca String é preciso importá-la no seu arquivo de recursos ou no seu arquivo de teste.
