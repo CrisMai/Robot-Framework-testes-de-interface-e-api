@@ -392,3 +392,12 @@ Características e funcionalidades:
 
 Formas de Uso:
 Para utilizar a biblioteca String é preciso importá-la no seu arquivo de recursos ou no seu arquivo de teste.
+
+
+- Biblioteca JsonLibrary
+
+O JSONLibrary é uma biblioteca de testes do Robot Framework para manipular o Objecto JSON. Poderá manipular o seu objecto JSON com o JSONPath.
+JSONPath é uma expressão que pode ajudar a acessar seu documento JSON. A estrutura do JSONPath é da mesma forma que o XPath que usa para aceder ao documento XML. Este é um exemplo da sintaxe do JSONPath.
+
+Instalar robotframework-jsonlibrary através do comando pip
+pip install -U robotframework-jsonlibrary
