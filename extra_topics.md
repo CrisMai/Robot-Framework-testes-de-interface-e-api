@@ -401,3 +401,24 @@ JSONPath é uma expressão que pode ajudar a acessar seu documento JSON. A estru
 
 Instalar robotframework-jsonlibrary através do comando pip
 pip install -U robotframework-jsonlibrary
+
+
+- Biblioteca DateTime
+
+Essa é uma biblioteca embutida que fornece palavras-chave para trabalhar com datas e tempos nos casos de teste. Ela oferece várias funcionalidades para manipular datas, calcular diferenças de tempo, formatar datas e muito mais.
+
+Características e funcionalidades:
+-Obtenção da Data e Hora Atuais: Get Current Date e Get Current Date palavras-chave para obter a data e hora atuais.
+
+-Cálculos de Diferenças de Tempo:Time Difference e Convert Time para calcular a diferença entre duas datas ou converter entre diferentes formatos de tempo.
+
+-Formatação de Datas e Horas:Format Time para formatar uma data ou hora em uma determinada string de formato.
+
+-Manipulação de Datas e Horas;
+
+-Comparação de Datas;
+
+-Conversão de Formatos de Data e Hora: Convert Date para converter uma data de um formato para outro.
+
+-Validação de Formatos de Data e Hora: Should Be Date, Should Be Valid Date e Should Match Pattern para validar se uma string está no formato de data e hora esperado.
+
