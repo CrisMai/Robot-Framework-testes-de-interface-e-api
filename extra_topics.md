@@ -442,3 +442,38 @@ testar endpoints da API, enviar solicitações HTTP e visualizar as respostas.
 Swagger Codegen:
 Uma ferramenta que gera automaticamente código cliente em várias linguagens de programação a partir de um arquivo Swagger/OpenAPI Specification. 
 Isso ajuda os desenvolvedores a consumir a API mais facilmente, fornecendo classes, métodos e estruturas de dados correspondentes às definições da API.
+
+
+*** RequestsLibrary ***
+
+A biblioteca RequestsLibrary é uma extensão do Robot Framework que fornece palavras-chave para fazer solicitações HTTP e interagir com APIs da web. 
+Ela é baseada na biblioteca Python requests. 
+
+Funcionalidades Principais:
+
+Realizar Solicitações HTTP:
+A RequestsLibrary permite fazer diferentes tipos de solicitações HTTP, incluindo GET, POST, PUT, DELETE, PATCH, OPTIONS, HEAD.
+
+Enviar e Receber Dados:
+É possível enviar dados junto com suas solicitações, como parâmetros de consulta, cabeçalhos, corpo de solicitação (payload) e autenticação. 
+
+Gerenciamento de Sessões:
+A biblioteca suporta o uso de sessões persistentes, permitindo que você mantenha o estado entre várias solicitações. 
+Isso é útil para lidar com autenticação, cookies e outras informações de sessão.
+
+Manipulação de Cookies:
+Você pode facilmente manipular cookies, incluindo adicionar, remover e verificar cookies em solicitações HTTP.
+
+Upload de Arquivos:
+A RequestsLibrary suporta o envio de arquivos em solicitações HTTP, permitindo o upload de arquivos para servidores remotos.
+
+Validação de Respostas:
+Você pode verificar as respostas das solicitações HTTP usando palavras-chave de validação, como Should Be Equal, Should Be Equal As Numbers, Should Contain.
+
+Como Usar:
+Para começar a usar a RequestsLibrary em seus testes do Robot Framework, você precisa instalar no CMD:
+pip install robotframework-requests
+
+Em seguida, você precisa importá-la no seu arquivo de recursos ou no seu arquivo de teste:
+*** Settings ***
+Library    RequestsLibrary
