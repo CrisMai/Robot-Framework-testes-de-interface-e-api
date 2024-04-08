@@ -422,3 +422,23 @@ Características e funcionalidades:
 
 -Validação de Formatos de Data e Hora: Should Be Date, Should Be Valid Date e Should Match Pattern para validar se uma string está no formato de data e hora esperado.
 
+
+
+*** Swagger ***
+
+Swagger é uma estrutura de código aberto que permite projetar, documentar e consumir APIs REST de forma fácil e eficiente. 
+Ele fornece uma interface visual interativa, conhecida como Swagger UI, que permite aos desenvolvedores visualizar e interagir com a documentação 
+da API diretamente no navegador da web.
+
+Principais Componentes do Swagger:
+
+Swagger Editor:
+Uma ferramenta online ou uma aplicação desktop que permite aos desenvolvedores escrever e editar arquivos Swagger/OpenAPI Specification.
+
+Swagger UI:
+Uma interface de usuário interativa que exibe a documentação da API de forma visualmente atraente. Os desenvolvedores podem usar o Swagger UI para 
+testar endpoints da API, enviar solicitações HTTP e visualizar as respostas.
+
+Swagger Codegen:
+Uma ferramenta que gera automaticamente código cliente em várias linguagens de programação a partir de um arquivo Swagger/OpenAPI Specification. 
+Isso ajuda os desenvolvedores a consumir a API mais facilmente, fornecendo classes, métodos e estruturas de dados correspondentes às definições da API.
