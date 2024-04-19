@@ -8,6 +8,7 @@ Suite Teardown     Encerrar sessão
 Resource    ../resource/usuarios_resource.robot
 Resource    ../resource/autenticacao_resource.robot
 Resource    ../resource/produto_resource.robot
+Resource    ../resource/carrinho_resource.robot
 
 *** Variables ***
 
@@ -26,11 +27,13 @@ Teste - Fluxo Carrinho Completo
 
 
     # Carrinho
-    Cadastrar produto no carrinho    ${produto}
+    ${carrinho_id}    Cadastrar produto no carrinho    ${product_id}    ${produto}    ${token}    201
 
-    Buscar carrinho    ${product_id}    ${produto}
+    Buscar carrinho    ${product_id}    ${produto}    200    ${token}
 
-    Realizar compra    ${token}
+    Realizar compra    ${token}    200
+
+    Buscar produto     ${token}    ${product_id}     200
 
     Excluir carrinho/cancelar compra    ${token}
 
