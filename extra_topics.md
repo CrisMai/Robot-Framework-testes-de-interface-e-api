@@ -477,3 +477,25 @@ pip install robotframework-requests
 Em seguida, você precisa importá-la no seu arquivo de recursos ou no seu arquivo de teste:
 *** Settings ***
 Library    RequestsLibrary
+
+
+*** Selenium ***
+
+O Selenium é uma ferramenta de automação de testes amplamente utilizada para testar aplicativos da web. Ele fornece uma API que permite controlar um navegador da web e automatizar a interação com páginas da web, simulando as ações de um usuário real. 
+
+Características Principais:
+
+Controle de Navegadores:
+O Selenium suporta a automação de vários navegadores da web, incluindo Google Chrome, Mozilla Firefox, Microsoft Edge, Safari e outros. Isso permite testar a compatibilidade entre navegadores e garantir que o aplicativo funcione corretamente em diferentes ambientes de navegador.
+
+Interatividade com Elementos da Página:
+O Selenium permite interagir com elementos da página da web, como clicar em botões, preencher campos de formulário, enviar dados, verificar conteúdo e muito mais. Isso permite simular cenários de uso reais e testar a funcionalidade do aplicativo da web.
+
+Suporte a Diferentes Linguagens de Programação:
+O Selenium é compatível com várias linguagens de programação, incluindo Python, Java, C#, Ruby e JavaScript. Isso oferece flexibilidade para os desenvolvedores escreverem testes de automação usando a linguagem de programação de sua escolha.
+
+Execução em Diferentes Plataformas:
+Os testes escritos com o Selenium podem ser executados em diferentes plataformas, incluindo Windows, macOS e Linux. Isso permite realizar testes em diferentes ambientes de sistema operacional e garantir que o aplicativo da web seja compatível.
+
+Integração com Frameworks de Teste:
+O Selenium pode ser facilmente integrado com outros frameworks de teste, como o JUnit, TestNG, NUnit e Robot Framework. Isso permite incluir testes de automação de interface de usuário como parte de seus pipelines de CI/CD e processos de teste automatizados.
