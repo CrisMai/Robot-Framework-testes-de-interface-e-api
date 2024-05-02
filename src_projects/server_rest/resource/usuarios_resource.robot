@@ -7,7 +7,7 @@ Library           RequestsLibrary
 
 *** Keywords ***
 # Crud
-Criação de usuario
+Criação de usuario    
     ${header}    Create Dictionary    Content-Type=application/json
     ${RESPONSE}    Post On Session    alias=api    url=/usuarios    headers=${header}    data={"nome": "Eu QA Teste", "email": "qa@qa.com.br", "password": "teste", "administrador": "true" }    expected_status=201
     ${USER_ID}     Set Variable    ${RESPONSE.json()['_id']}
