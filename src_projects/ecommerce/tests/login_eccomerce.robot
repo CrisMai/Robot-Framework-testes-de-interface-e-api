@@ -1,9 +1,10 @@
 *** Settings ***
 
 Library        SeleniumLibrary
-Resource       ../resource/login_resource.robot    # robotcode: ignore
+Resource       ../resource/my_account/login_rsc.robot    
 Resource       ../data_driven/credenciais.robot
-Resource       ../resource/session.robot
+Resource       ../resource/navigation/session_login_rsc.robot
+
 
 Suite Setup       Abrir navegador    URL=${URL_BASE}    # robotcode: ignore
 Suite Teardown    Fechar navegador
