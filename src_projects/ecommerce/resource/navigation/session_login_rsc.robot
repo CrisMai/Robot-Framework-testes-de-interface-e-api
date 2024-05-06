@@ -1,7 +1,6 @@
 *** Settings ***
 
 Library        SeleniumLibrary
-
 Resource    ../login_rsc.robot
 
 *** Variables ***
