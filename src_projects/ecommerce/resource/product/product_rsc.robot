@@ -20,5 +20,3 @@ Selecionar produto
     ${message_get}    Get WebElement    class:woocommerce-message 
     Should Contain Any    ${message_get.text}    has been add to your cart    have been add to your cart
     
-
-    # Fazer commit 08-05 "Testes Fluxo de Compra - parte 1"
