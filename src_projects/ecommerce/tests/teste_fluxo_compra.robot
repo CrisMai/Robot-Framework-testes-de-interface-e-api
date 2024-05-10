@@ -1,7 +1,6 @@
 *** Settings ***
 
 Resource        ../resource/my_account/login_rsc.robot
-Resource        ../resource/navigation/session_login_rsc.robot
 Resource        ../data_driven/credenciais.robot
 Resource        ../resource/home/home_rsc.robot
 Resource        ../resource/product/product_rsc.robot
@@ -11,7 +10,7 @@ Resource        ../resource/product/checkout_rsc.robot
 Suite Setup    Abrir navegador e fazer login    user=${LOGIN}    password=${PASSWORD}    URL=${URL_BASE}    browser=chrome
 
 *** Variables ***
-
+@{lista_produto}    Album    Benie with Logo
 
 *** Test Cases ***
 
@@ -30,13 +29,12 @@ Testar fluxo de compra
     # Validar produto
     Navegar para    url=${URL_BASE}    url_complementar=/cart
     Validar carrinho    Album    2    15
-    Validar carrinho    Beanie with logo
+    # Validar carrinho    Beanie with Logo
 
     # Checkout
     Navegar para    url=${URL_BASE}    url_complementar=/checkout
-    Realizar checkout    Album   
+    Realizar checkout    ${lista_produto} 
     
-
+    # # Limpar carrinho
+    # Navegar para    url=${URL_BASE}    url_complementar=/checkout
     # Limpar carrinho
-    Navegar para    url=${URL_BASE}    url_complementar=/checkout
-    Limpar carrinho

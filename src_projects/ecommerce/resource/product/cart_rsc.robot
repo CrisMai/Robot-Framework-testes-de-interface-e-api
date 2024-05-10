@@ -39,5 +39,6 @@ Validar carrinho
         
     END
 
-# Commit 09-05 "Testes Fluxo de Compras - Validar carrinho - parte 2 "
+
+
     
