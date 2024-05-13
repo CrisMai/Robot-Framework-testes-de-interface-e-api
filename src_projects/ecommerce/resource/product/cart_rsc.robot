@@ -39,6 +39,26 @@ Validar carrinho
         
     END
 
+Limpar carrinho
+    ${resposta}    Run Keyword And Return Status    Wait Until Element Is Visible    //*[@class="shop_table shop_table_response"]
+    Log To Console    ${resposta}
 
+    IF  '${resposta}' == 'True'
+        ${table}    Get Element Count    //*[@class="shop_table shop_table_responsive cart woocommerce-cart-form"]
 
+        ${count}    Get Element Count    //*[@class="shop_table shop_table_responsive cart woocommerce-cart-form"]
+        # Log To Console    ${count}
+        FOR  ${i}  IN RANGE  ${count}
+
+            Click Element    //*[@class="shop_table shop_table_responsive cart woocommerce-cart-form"]
+            Sleep    3s
+
+            ${resposta}    Run Keyword And Return Status    Wait Until Element Is Visible    //*[@class="shop_table shop_table_responsive cart woocommerce-cart-form"]
+            Log To Console    ${resposta}
+            Exit For Loop If    '${resposta}' == 'False'
+        END  
+    END
+
+    Log To Console    Carrinho está limpo
+    
     

@@ -36,5 +36,5 @@ Testar fluxo de compra
     Realizar checkout    ${lista_produto} 
     
     # # Limpar carrinho
-    # Navegar para    url=${URL_BASE}    url_complementar=/checkout
-    # Limpar carrinho
+    Navegar para    url=${URL_BASE}    url_complementar=/checkout
+    Limpar carrinho
